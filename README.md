@@ -8,12 +8,12 @@ step 1 :
 同时查阅了很多的动态规划的理论，觉得Floyd应该是最合适建立地图的，同时我把代价函数设为 
 cost = sigma(length of road / min(max_car_speed, road_limit_speed)) 
 得到的是最短时间的路径，同时作为下一步规划的参考
-	My first version of FloydSearching
+My first version of FloydSearching
 
 step 2:
 实现调度器，根据规则实现各种判题器逻辑，能够预测在哪些路口会出现死锁(A等B，B等C，C等D，D等A)的情况，从而根据给出的车辆，路口，道路条件，仿真车辆运行情况。得到私锁车辆后重新规划附近结点到目的结点的新路径(查先前的Floyd)，避免死锁
 回滚到死锁之前的情况，重新仿真，直到能够解除死锁
-
+Add Schedule Module to My Floyd Version. 
 
 step3:
 其实还考虑过网络最优路径的一些算法：https://zhuanlan.zhihu.com/p/45062599， 我觉得核心和动态规划的思想基本一致
