@@ -16,7 +16,7 @@ step 2:
 Add Schedule Module to My Floyd Version. 
 
 step3:
-其实还考虑过网络最优路径的一些算法：https://zhuanlan.zhihu.com/p/45062599， 我觉得核心和动态规划的思想基本一致
+其实还考虑过网络最优路径的一些算法：https://zhuanlan.zhihu.com/p/45062599 我觉得核心和动态规划的思想基本一致
 
 教训（说给我自己，大佬自动过滤）：
 
