@@ -11,12 +11,18 @@ cost = sigma(length of road / min(max_car_speed, road_limit_speed))
 My first version of FloydSearching
 
 2019.4.3
+
 新增想法，路径通行代价可以改为
+ 
  cost = sigma(length of road / min(max_car_speed, road_limit_speed) + 该道路路上慢车惩罚)
- 路上慢车惩罚 = 
+ 
+ 路上慢车惩罚:
+ 
  switch(road_limit_speed - max_car_speed)
+ 
  { case 非正: 没有惩罚;break; 
    case 各负值: wi; break;}                 
+ 
  惩罚理由：慢车 上 快路 会押后方快车，增加惩罚项，让慢车少占用快车道，重点调参!
 
 step 2:
