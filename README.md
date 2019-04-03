@@ -11,13 +11,13 @@ cost = sigma(length of road / min(max_car_speed, road_limit_speed))
 My first version of FloydSearching
 
 2019.4.3
-
 新增想法，路径通行代价可以改为
-cost = sigma(length of road / min(max_car_speed, road_limit_speed) + 该道路路上慢车惩罚)
-路上慢车惩罚 = 
-switch(road_limit_speed - max_car_speed)
-{ case 非正: 没有惩罚;break; 
-  case 各负值: wi; break;}                     惩罚理由：慢车 上 快路 会押后方快车，增加惩罚项，让慢车少占用快车道，重点调参!
+ cost = sigma(length of road / min(max_car_speed, road_limit_speed) + 该道路路上慢车惩罚)
+ 路上慢车惩罚 = 
+ switch(road_limit_speed - max_car_speed)
+ { case 非正: 没有惩罚;break; 
+   case 各负值: wi; break;}                 
+ 惩罚理由：慢车 上 快路 会押后方快车，增加惩罚项，让慢车少占用快车道，重点调参!
 
 step 2:
 实现调度器，根据规则实现各种判题器逻辑，能够预测在哪些路口会出现死锁(A等B，B等C，C等D，D等A)的情况，从而根据给出的车辆，路口，道路条件，仿真车辆运行情况。得到私锁车辆后重新规划附近结点到目的结点的新路径(查先前的Floyd)，避免死锁
