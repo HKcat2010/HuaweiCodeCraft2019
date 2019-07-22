@@ -20,8 +20,8 @@ My first version of FloydSearching
  
  switch(road_limit_speed - max_car_speed)
  
- { case 非正: 没有惩罚;break; 
-   case 各负值: wi; break;}                 
+ { case 非正: 没有惩罚;break; <br>
+   case 负值: wi; break;}                 
  
  惩罚理由：慢车 上 快路 会押后方快车，增加惩罚项，让慢车少占用快车道，重点调参!
 
