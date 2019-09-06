@@ -1,4 +1,4 @@
-# HuaweiCodeCraft2019
+# HuaweiCodeCraft2019 [规则介绍见官网](https://codecraft.huawei.com/generaldetail)
 队员：黄楷 
 
 先说思路
@@ -14,7 +14,7 @@ My first version of FloydSearching
 
 新增想法，路径通行代价可以改为
  
- cost = sigma(length of road / min(max_car_speed, road_limit_speed) + 该道路路上慢车惩罚)
+ cost = sum(length of road / min(max_car_speed, road_limit_speed) + 该道路路上慢车惩罚)
  
  路上慢车惩罚:
  
