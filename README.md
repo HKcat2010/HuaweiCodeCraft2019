@@ -1,4 +1,5 @@
-# HuaweiCodeCraft2019 [规则介绍见官网](https://codecraft.huawei.com/generaldetail)
+# HuaweiCodeCraft2019 
+[规则介绍见官网](https://codecraft.huawei.com/generaldetail)
 队员：黄楷 
 
 先说思路
